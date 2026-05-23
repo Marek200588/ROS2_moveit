@@ -2,8 +2,6 @@
 
 A lightweight, asynchronous REST API bridge connecting modern web applications with ROS 2 and MoveIt 2. This package allows you to control a 6-DOF robotic arm and read its joint states in real-time via standard HTTP requests, completely abstracting the complexity of `ros2_control` and `sensor_msgs`.
 
-![FastAPI Swagger UI and RViz](<TUTAJ_WKLEJ_LINK_DO_SCREENA_ZE_SWAGGEREM_I_RVIZEM>)
-
 ## 🎯 Project Overview
 Traditionally, controlling a robotic arm via ROS 2 requires native C++ or Python ROS nodes. This project introduces a **FastAPI-based middleware** that exposes the robot's hardware interface to any external client (Web Apps, Mobile Apps, or Cloud Services). 
 
@@ -14,7 +12,7 @@ Traditionally, controlling a robotic arm via ROS 2 requires native C++ or Python
 * **Interactive Docs:** Auto-generated Swagger UI for instant API testing.
 
 ## 🛠️ Tech Stack
-* **Robotics:** ROS 2 (Humble/Iron), MoveIt 2, URDF/Xacro
+* **Robotics:** ROS 2 (Humble), MoveIt 2, URDF/Xacro
 * **Backend:** Python 3.10+, FastAPI, Pydantic, Uvicorn
 * **Communication:** RESTful HTTP, ROS 2 Pub/Sub
 
