@@ -22,5 +22,12 @@ Traditionally, controlling a robotic arm via ROS 2 requires native C++ or Python
 Ensure you have sourced your ROS 2 installation. Navigate to your workspace root and build the packages:
 ```bash
 cd ~/ros2_ws
-colcon build 
+colcon build
 source install/setup.bash
+### IN 3 awSEPARATE TERMINALS PASTE:
+streamlit run ~/ros2_ws/src/my_robot_workspace/moveit_fastapi_bridge/moveit_fastapi_bridge/dashboard.py
+
+ros2 run moveit_fastapi_bridge api_server
+
+ros2 launch my_robot_moveit_config demo.launch.py
+
