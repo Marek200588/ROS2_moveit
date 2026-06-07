@@ -7,7 +7,6 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     
-    # 1. Nasz węzeł z serwerem FastAPI (ten, który napisaliśmy)
     api_node = Node(
         package='moveit_fastapi_bridge',
         executable='api_server',
